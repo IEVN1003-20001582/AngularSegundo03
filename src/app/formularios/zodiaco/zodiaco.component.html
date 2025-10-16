@@ -1,0 +1,75 @@
+<p>PRACTICA ZODIACO</p>
+<div class="container py-4">
+  <div class="card shadow-lg border-0 p-4" style="background: linear-gradient(135deg, #ff4d4d, #ff944d); color: white;">
+    <h2 class="text-center mb-4 fw-bold">Horóscopo Chino</h2>
+
+    <form [formGroup]="formularioZodiaco" class="row g-3">
+
+<div class="col-md-12">
+  <h1>Nombre</h1>
+      <div class="col-md-4">
+        <label class="form-label">Nombre:</label>
+        <input type="text" class="form-control border-0" formControlName="nombreU">
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Apellido Paterno:</label>
+        <input type="text" class="form-control border-0" formControlName="apPaternoU">
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Apellido Materno:</label>
+        <input type="text" class="form-control border-0" formControlName="apMaternoU">
+      </div>
+</div>
+
+<div class="col-md-12">
+  <h1>Fecha de Nacimiento</h1>
+      <div class="col-md-4">
+        <label class="form-label">Día:</label>
+        <input type="number" class="form-control border-0" formControlName="diaN">
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Mes:</label>
+        <input type="number" class="form-control border-0" formControlName="mesN">
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Año:</label>
+        <input type="number" class="form-control border-0" formControlName="anioN">
+      </div>
+
+</div>
+
+      <div class="col-12 mt-2">
+        <label class="form-label me-3">Sexo:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="sexoU" [value]="true" id="masculino">
+          <label class="form-check-label" for="masculino">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" formControlName="sexoU" [value]="false" id="femenino">
+          <label class="form-check-label" for="femenino">Femenino</label>
+        </div>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="button" class="btn btn-lg mt-3 px-5 text-white fw-bold boton-gradiente" (click)="mostrarResultado()">
+          Calcular
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Resultado -->
+  <div class="resultado text-center mt-5" If="infoFinal">
+    <div class="card border-0 shadow-lg p-4 resultado-card mx-auto">
+      <h4 class="fw-bold text-danger">Hola {{ infoFinal?.nombreCompleto }}</h4>
+      <p class="text-dark">Edad: <strong>{{ infoFinal?.edad }}</strong> años</p>
+      <p class="text-dark">Tu signo del horóscopo chino es:</p>
+      <h3 class="fw-bold text-uppercase text-warning">{{ infoFinal?.signo }}</h3>
+      <img If="infoFinal?.imagen" [src]="infoFinal?.imagen" [alt]="infoFinal?.signo" class="imagen-signo mt-3">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap-5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/hojaE.css">
+    <title>PRACTICA 6</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row bg-dark mx-auto text-center">
+            <header class="col-10 m-3 p-3 mx-auto">
+                <h1>CONTACTO</h1>
+
+            </header>
+        </div>
+        
+        <nav class="col-10 m-3 p-3 mx-auto text-center">
+            <a href="index.html" class="btn btn-light">INICIO</a>
+            <a href="quien-es.html" class="btn btn-light">¿QUIEN ES?</a>
+            <a href="filmografia.html" class="btn btn-light">FILMOGRAFIA</a>
+        </nav>
+        
+        <div class="row col-10 bg-light-subtle mx-auto">
+            <section class="bg-warning-subtle col-5 text-center m-2 p-2 mx-auto text-center">
+                <div class="form">
+                    <label form="txtNombre" class="col-form-label">Nombre</label>
+                    <input type="text" id="txtNombre" class="form-control">
+                    <label form="txtApellidos" class="col-form-label">Apeliidos</label>
+                    <input type="text" id="txtApellidos" class="form-control">
+                    <label form="txtCorreo" class="col-form-label">Correo</label>
+                    <input type="email" id="txtCorreo" class="form-control">
+                    <label for="" class="col-form-label">Genero:</label>
+                    <br>
+                    <input type="radio" id="rbtGenero1" name="rbtGenero" value="M">Masculino
+                    <input type="radio" id="rbtGenero2" name="rbtGenero" value="F">Femenino
+                    <input type="radio" id="rbtGenero3" name="rbtGenero" value="O">Otro
+                    <br><br>
+                    <label for="txtFN" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" id="txtFN" class="form-control">
+                    <br>
+                    <label for="txtColor" class="form-label">Color favorito:</label>
+                    <input type="color" id="txtColor" class="form-control">
+                    <br>
+                    <button type="button" class="btn btn-dark btn-sm" onclick="mostrar()">Enviar</button>
+                </div>
+            </section>
+            
+            <aside class="bg-danger-subtle col-5 text-center mx-auto">
+                <h3 id="contenido"></h3>
+            </aside>
+        </div>
+        
+        <div class="col-10 m-3 p-3 bg-dark mx-auto text-center">
+            <h6>UNIVERSIDAD TECNOLOGICA DE LEON</h6>
+            <h6>INGENIERIA EN TECNOLOGIAS DE LA INFORMACION E INOVACION DIGITAL</h6>
+            <h6>LDSM401</h6>
+            <h6>APLICACIONES WEB</h6>
+        </div>
+        
+        <div class="row">
+
+        </div>
+    </div>
+    
+    <script src="js/funcion.js"></script>
+    <script src="style/bootstrap-5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="style/bootstrap-5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

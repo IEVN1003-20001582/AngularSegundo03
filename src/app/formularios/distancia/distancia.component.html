@@ -1,0 +1,27 @@
+<p>distancia works!</p>
+<form [formGroup]="formulario">
+  <div>
+    <label for="">X1:</label>
+    <input type="number" formControlName="x1">
+  </div>
+  <br>
+    <div>
+    <label for="">Y1:</label>
+    <input type="number" formControlName="y1">
+  </div>
+  <br>
+      <div>
+    <label for="">X2:</label>
+    <input type="number" formControlName="x2">
+  </div>
+  <br>
+      <div>
+    <label for="">Y2:</label>
+    <input type="number" formControlName="y2">
+  </div>
+  <br>
+  <button (click)="calcular()" type="submit">Multiplicar</button>
+
+  <h1>Resultado: {{resultado}}</h1>
+
+</form>

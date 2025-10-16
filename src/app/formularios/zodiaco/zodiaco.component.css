@@ -1,0 +1,51 @@
+body {
+  background-color: #fff3e0;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.form-control {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.boton-gradiente {
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.boton-gradiente:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff7043, #ffb74d);
+}
+
+.resultado-card {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 400px;
+}
+
+.imagen-signo {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.imagen-signo:hover {
+  transform: scale(1.15);
+}
+
+h2 {
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}

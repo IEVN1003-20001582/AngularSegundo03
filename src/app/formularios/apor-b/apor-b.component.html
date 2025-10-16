@@ -1,0 +1,20 @@
+<p>apor-b works!</p>
+<p>distancia works!</p>
+<form [formGroup]="formulario">
+  <div>
+    <label for="">A:</label>
+    <input type="number" formControlName="a">
+  </div>
+  <br>
+    <div>
+    <label for="">B:</label>
+    <input type="number" formControlName="b">
+  </div>
+  <br>
+
+  <br>
+  <button (click)="calcular()" type="submit">Multiplicar</button>
+
+  <h1>Resultado: {{resultado}}</h1>
+
+</form>
