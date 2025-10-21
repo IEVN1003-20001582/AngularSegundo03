@@ -24,7 +24,7 @@ export default[
   },
 
       {
-    path:'eliminar',
+    path:'eliminar/:matricula',
     loadComponent:()=>import('./eliminar/eliminar.component').then(c=>c.EliminarComponent)
   },
 
