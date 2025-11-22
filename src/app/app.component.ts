@@ -9,12 +9,13 @@ import { TempComponent } from "./tem/temp/temp.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DistanciaComponent, ZodiacoComponent, AporBComponent, NavbarComponent, TempComponent],
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  title = 'AngularSegundo03';
+
+  title = 'web-app';
 
   ngOnInit(): void {
     initFlowbite();
